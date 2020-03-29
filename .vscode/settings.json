@@ -1,0 +1,8 @@
+{
+    "editor.fontSize": 13,
+    "editor.tabSize": 10,
+    "editor.accessibilityPageSize": 12,
+    "editor.fastScrollSensitivity": 6,
+    "workbench.panel.defaultLocation": "left",
+    "workbench.tree.indent": 10
+}

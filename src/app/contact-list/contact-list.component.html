@@ -1,0 +1,14 @@
+<p>contact-list works!</p>
+
+<button (click)="printtable = !printtable">Toggle message</button>
+<h2 *ngIf="printtable">{{ message }}</h2>
+<p>printtable: {{ printtable }}</p>
+
+<div *ngIf="contacts">
+  <div *ngFor="let contact of contacts">
+    <h3>{{ contact.name }}</h3>
+    <div>
+      <img class="app-avatar" *ngIf="contact.avatar.url" [src]="contact.avatar?.url" alt="avatar of {{ contact.name }}" />
+    </div>
+  </div>
+</div>

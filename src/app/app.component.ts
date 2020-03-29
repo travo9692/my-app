@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+  tabIndex: number = 1;
+
+  changeTab(tabIndex){
+    this.tabIndex = tabIndex;
+  }
 }
